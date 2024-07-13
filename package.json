@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "react-tooltip": "^5.26.4",
+    "tooltip": "^1.6.1"
+  }
+}

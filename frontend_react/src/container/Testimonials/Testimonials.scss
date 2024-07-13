@@ -1,0 +1,70 @@
+.outer{
+    display:flex;
+    flex-direction: column;
+
+    h2{
+        align-self: center;
+        
+    }
+
+    @media all and (max-width: 768px) and (max-height: 1024px) and (orientation:portrait) 
+    {
+
+    }
+}
+
+.app__profil{
+    // background-color: aqua;
+    margin-left: 28vw;
+    display:flex;
+    flex-direction: column;
+    align-content: center;
+    padding:50px;
+    width:90vw;
+    
+
+    @media only screen and (max-width: 768px) {
+        width:80vw;
+        margin-left:13vw;
+    }
+
+    @media only screen and (max-width: 480px) {
+        // background-color: aqua;
+        margin-left:0vh;
+        width:100%;
+    }
+}
+
+.desc{
+    box-shadow: rgba(149, 157, 165, 0.1) 2px 2px 0px;
+    width:30vw;
+    padding:20px;
+
+    
+    @media only screen and (max-width: 800px) {
+        // background-color: rgb(123, 160, 125);
+        width:100vw;
+    }
+    @media all and (max-width: 768px) and (max-height: 1024px) and (orientation:portrait) 
+    {
+        // background-color: rgb(123, 160, 125);
+        width:100vw;
+    }
+
+    .year{
+        font-size: 20px;
+    }
+    .name{
+        font-size: 16px;
+        width:30vw;
+
+        @media only screen and (max-width: 480px) {
+            width:65vw;
+        }
+    }
+
+    .percent{
+        font-size: 16px;
+    }
+}
+
