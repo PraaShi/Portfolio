@@ -3,9 +3,9 @@
     width:90vw;
     flex-direction:column;
 
-    @media only screen and (max-width: 480px) { //
+    @media only screen and (max-width: 480px) { 
+        margin-top: 5vh;
         // background-color: aqua;
-        margin-left:3vh;
     }
 }
 
@@ -43,6 +43,7 @@
     text-align: center;
     margin:1rem;
     transition:all 0.3s ease-in-out;
+    
     div{
         width:90px;
         height:90px;
@@ -59,13 +60,12 @@
         }
 
         @media screen and (min-width:2000px){
-            width:150px;
-            height:150px;
-        }      
-        
-        @media screen and (min-width:2000px){
             width:70px;
             height:70px;
         }  
+    }
+
+    p{
+        font-size: 1rem;
     }
 }

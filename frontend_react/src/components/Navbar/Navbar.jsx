@@ -10,33 +10,38 @@ const Navebar = () => {
   return (
     <nav className='app__navbar'>
       <div className='app__navbar-logo'>
-        {/* <img src={images.logo} alt='logo' /> */}
+        <img src={images.logo} alt='logo' />
       </div>
       <ul className='app__navbar-links'>
-        {['home','about','work','skills','Testimonials','Footer'].map((item)=> (
+        {['header','about','work','skills','Testimonials','Footer'].map((item)=> (
           <li className='app__flex p-text' key={`link-${item}`}>
-            <div />
-            <a href={`#${item}`}>{item}</a>
+            <div/>
+            {
+              item === 'Testimonials' ? <a href={`#${item}`}>Education</a> : item === "Footer" ? <a href={`#${item}`}>Contact</a> :<a href={`#${item}`}>{item}</a>
+            }
+            
           </li>
         ))}
       </ul>
-      <div className='app__navbar-menu'>
+      {/* <div className='app__navbar-menu'>
         <HiMenuAlt4 onClick={() => setToggle(true)} />
         
         {toggle && (
-          <motion.div whileInView={{x:[300,0]}} transition={{duration:0.85,ease:'easeOut'}}>
-            <HiX onClick={()=> setToggle(false)} /> 
-            <ul >
-            {['header','about','contact','work','skills'].map((item)=> (
-              <li className='app__flex p-text' key={item}>
-                <a href={`#${item}`} onClick={()=> setToggle(false)}>{item}</a>
-              </li>
-        ))}
-            </ul>
+          <motion.div   whileInView={{x:[300,0]}} transition={{duration:0.85,ease:'easeOut'}}>
+            <div className='menu'>
+              <HiX onClick={()=> setToggle(false)} /> 
+              <ul>
+              {['header','about','contact','work','skills'].map((item)=> (
+                <li className='app__flex p-text' key={item}>
+                  <a href={`#${item}`} onClick={()=> setToggle(false)}>{item}</a>
+                </li>
+          ))}
+              </ul>
+            </div>
 
           </motion.div>
         )}
-      </div>
+      </div> */}
     </nav>
   )
 }

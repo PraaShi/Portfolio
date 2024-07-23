@@ -24,14 +24,14 @@ const Header = () => {
         className='app__header-info'
       >
         <div className='app__header-badge'>
-          <div className='badge-cmp hello' app__flex>
+          <div className='badge-cmp' app__flex>
             <span>👋</span>
             <div style={{ marginleft:20}}>
               <p className='p-text '>Hello, I am</p>
               <h1 className='head-text'>Praveena Shivaani</h1>
             </div>
           </div>
-          <div className='tag-cmp  app__flex front'>
+          <div className='tag-cmp  app__flex'>
             <p className='p-text'>Frontend Developer</p>
             <p className='p-text'>using react</p>
           </div>
@@ -61,7 +61,7 @@ const Header = () => {
       whileInView={scaleVariants.whileInView}
       className='app__header-circles'
       >
-        {[images.flutter,images.redux,images.sass].map((circle,index) =>(
+        {[images.javascript,images.react,images.sass].map((circle,index) =>(
           <div className='circle-cmp app_flex' key={`circle-${index}`}>
             <img src={circle} alt='circle' /> 
           </div>

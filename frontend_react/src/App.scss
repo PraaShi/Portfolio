@@ -1,6 +1,7 @@
 .app {
     background-color: var(--primary-color);
     font-family: var(--font-base);
+    position:relative;
   }
   
   .app__whitebg {
@@ -17,6 +18,11 @@
   
     display: flex;
     flex-direction: row;
+
+    @media only screen and (max-width: 480px) { //
+      display:block;
+      min-height: 50vh;
+  }
   }
   
   .app__flex {
@@ -184,5 +190,21 @@
   
     .copyright {
       padding: 2rem;
+    }
+  }
+
+  .ph-nav{
+    display: none;
+  }
+
+  .main-nav{
+
+  }
+  @media screen and (max-width:768px){
+    .ph-nav{
+      display:block;
+    }
+    .main-nav{
+      display: none;
     }
   }

@@ -1,13 +1,18 @@
 import React from 'react';
 
 import {About,Footer,Header,Skills,Testimonials,Work} from './container';
-import { Navbar } from './components';
+import { Navbar,NavBarr } from './components';
 import './App.scss'
 
 function App() {
   return (
     <div className='app'>
-      <Navbar />
+      <div className='main-nav'>
+        <Navbar />
+      </div>
+      <div className='ph-nav'>
+        <NavBarr />
+      </div>
       <Header />
       <About />
       <Work />
